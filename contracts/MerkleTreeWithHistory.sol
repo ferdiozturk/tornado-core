@@ -1,13 +1,4 @@
-// https://tornado.cash
-/*
-* d888888P                                           dP              a88888b.                   dP
-*    88                                              88             d8'   `88                   88
-*    88    .d8888b. 88d888b. 88d888b. .d8888b. .d888b88 .d8888b.    88        .d8888b. .d8888b. 88d888b.
-*    88    88'  `88 88'  `88 88'  `88 88'  `88 88'  `88 88'  `88    88        88'  `88 Y8ooooo. 88'  `88
-*    88    88.  .88 88       88    88 88.  .88 88.  .88 88.  .88 dP Y8.   .88 88.  .88       88 88    88
-*    dP    `88888P' dP       dP    dP `88888P8 `88888P8 `88888P' 88  Y88888P' `88888P8 `88888P' dP    dP
-* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-*/
+// https://twister.cash
 
 pragma solidity 0.5.17;
 
@@ -17,7 +8,7 @@ library Hasher {
 
 contract MerkleTreeWithHistory {
   uint256 public constant FIELD_SIZE = 21888242871839275222246405745257275088548364400416034343698204186575808495617;
-  uint256 public constant ZERO_VALUE = 21663839004416932945382355908790599225266501822907911457504978515578255421292; // = keccak256("tornado") % FIELD_SIZE
+  uint256 public constant ZERO_VALUE = 12203036764200780499285592342002735938107858004988502615570892756707598521180; // = keccak256("twister") % FIELD_SIZE
 
   uint32 public levels;
 
