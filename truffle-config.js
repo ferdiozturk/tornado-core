@@ -60,13 +60,31 @@ module.exports = {
       // timeoutBlocks: 200,
       skipDryRun: true
     },
-    mainnet: {
+    ethmain: {
       provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'http://ethereum-rpc.trustwalletapp.com'),
       network_id: 1,
       gas: 6000000,
       gasPrice: utils.toWei('2', 'gwei'),
       // confirmations: 0,
       // timeoutBlocks: 200,
+      skipDryRun: true
+    },
+    bsctest: {
+      provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, `https://data-seed-prebsc-1-s1.binance.org:8545`),
+      network_id: 97,
+      gas: 6000000,
+      gasPrice: utils.toWei('1', 'gwei'),
+      //confirmations: 10,
+      //timeoutBlocks: 200,
+      skipDryRun: true
+    },
+    bscmain: {
+      provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, `https://bsc-dataseed1.binance.org`),
+      network_id: 56,
+      gas: 6000000,
+      gasPrice: utils.toWei('2', 'gwei'),
+      //confirmations: 10,
+      //timeoutBlocks: 200,
       skipDryRun: true
     },
 
