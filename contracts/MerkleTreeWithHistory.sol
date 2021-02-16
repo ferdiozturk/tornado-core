@@ -1,5 +1,3 @@
-// https://twister.cash
-
 pragma solidity 0.5.17;
 
 library Hasher {
